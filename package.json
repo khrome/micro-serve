@@ -1,0 +1,33 @@
+{
+    "name": "micro-serve",
+    "homepage": "https://github.com/khrome/micro-serve",
+    "version": "1.0.1",
+    "main": "server.js",
+    "description": "servers with just a little bit of cruft",
+    "keywords": [
+        "express",
+        "whammo"
+    ],
+    "author": "Abbey Hawk Sparrow <@khrome> (http://patternweaver.com)",
+    "contributors": [],
+    "bugs": {
+        "url": "https://github.com/khrome/micro-serve/issues"
+    },
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/micro-serve/whammo.git"
+    },
+    "dependencies": {
+        "whammo": "*"
+    },
+    "devDependencies": {
+        "mocha": "*",
+        "should": "*"
+    },
+    "optionalDependencies": {
+    },
+    "engines": {
+        "node": "*"
+    }
+}
