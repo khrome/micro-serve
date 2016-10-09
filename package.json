@@ -1,7 +1,7 @@
 {
     "name": "micro-serve",
     "homepage": "https://github.com/khrome/micro-serve",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "main": "server.js",
     "description": "servers with just a little bit of cruft",
     "keywords": [
@@ -16,7 +16,7 @@
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "git://github.com/micro-serve/whammo.git"
+        "url": "git://github.com/khrome/micro-serve.git"
     },
     "dependencies": {
         "whammo": "*"
