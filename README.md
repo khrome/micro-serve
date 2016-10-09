@@ -15,7 +15,7 @@ Instead of
 	
 use
 
-	var Server = require('micro-serve')(expressInstance);
+	var Server = require('micro-serve').express(expressInstance);
 	
 then continue to work as if you are using [whammo](https://www.npmjs.com/package/whammo).
 
