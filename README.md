@@ -1,7 +1,5 @@
 whammo on express
 =================
-Not yet complete(only post 1.0 due to a previous package)
-
 micro-serve is the express implementation of [whammo](https://www.npmjs.com/package/whammo) which is an ulta-thin server wrapper. Running a library that's intended to be barebones *inside* an application which is something of a kitchen sink may seem nonsensical, but the reality is many hosting configurations use express as an application deployment interface. The intent is to enable express in [Sterling](https://www.npmjs.com/package/sterling), but it can be used in any context as a drop-in replacement for whammo.
 
 Usage
