@@ -1,0 +1,30 @@
+#!/usr/bin/env node
+var yargs = require('yargs');
+yargs
+    .example('$0', 'serve the current directory on port 8080')
+    .example('$0 -p 8081', 'serve the current directory on port 8081')
+    .alias('p', 'port')
+    	.nargs('p', 1)
+    	.describe('p', 'Serve http from the provided port number')
+    .alias('d', 'directory')
+    	.nargs('d', 1)
+    	.describe('d', 'Serve this directory')
+    .alias('t', 'types')
+    	.nargs('t', 1)
+    	.describe('t', 'Serve these file extensions')
+    .help('h')
+    .alias('h', 'help')
+    .epilog('©2017 - Abbey Hawk Sparrow');
+argv = yargs.argv;
+
+var Server = require('../server.js');
+
+if(argv.d) process.chdir(argv.d);
+
+var types = argv.t?argv.t.split(',').map(function(type){
+    return type.trim().toLowerCase();
+}):undefined;
+
+var app = Server(types?{types:types}:{});
+
+app.listen(argv.p || 8080);

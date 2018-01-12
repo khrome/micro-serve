@@ -1,12 +1,16 @@
 {
     "name": "micro-serve",
     "homepage": "https://github.com/khrome/micro-serve",
-    "version": "1.1.1",
+    "version": "2.0.0",
     "main": "server.js",
-    "description": "servers with just a little bit of cruft",
+    "description": "ultra lightweight server",
     "keywords": [
         "express",
-        "whammo"
+        "director",
+        "whammo",
+        "http",
+        "simplehttpserver",
+        "server"
     ],
     "author": "Abbey Hawk Sparrow <@khrome> (http://patternweaver.com)",
     "contributors": [],
@@ -18,8 +22,14 @@
         "type": "git",
         "url": "git://github.com/khrome/micro-serve.git"
     },
+    "scripts": {
+        "micro-serve": "./bin/userve.js",
+        "userve": "./bin/userve.js",
+        "µserve": "./bin/userve.js"
+    },
     "dependencies": {
-        "whammo": "*"
+        "whammo": "*",
+        "yargs": "*"
     },
     "devDependencies": {
         "mocha": "*",
